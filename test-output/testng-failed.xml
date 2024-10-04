@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utility.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="E:/Kiran/Next Wave/Projects/Mini_TestNG_Project(failed)">
+    <classes>
+      <class name="tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginPageElementsStatus"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginPageTest -->
+    </classes>
+  </test> <!-- E:/Kiran/Next Wave/Projects/Mini_TestNG_Project(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

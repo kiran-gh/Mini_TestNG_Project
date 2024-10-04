@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"/>
+    <test verbose="2" preserve-order="true" name="E:/Kiran/Next Wave/Projects/Mini_TestNG_Project">
+        <classes>
+            <class name="tests.LoginPageTest">
+                <methods>
+                    <include name="loginPageElementsStatus"/>
+                    <include name="welcome"/>
+                    <include name="loginError"/>
+                </methods>
+            </class>
+            <class name="tests.AccountsPageTest">
+                <methods>
+                    <include name="isAccountPageElementsDisplayed"/>
+                    <include name="logoutFunctionality"/>
+                </methods>
+            </class>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="isHomePageElementsDisplayed"/>
+                    <include name="popularPageLinkCheck"/>
+                    <include name="accountsPageLinkCheck"/>
+                    <include name="homePageLinkCheck"/>
+                    <include name="searchForAMovie"/>
+                </methods>
+            </class>
+            <class name="tests.MoviesPageTest">
+                <methods>
+                    <include name="moviesPageCheck"/>
+                    <include name="movieTitleCheck"/>
+                    <include name="reviewSectionCheck"/>
+                    <include name="overViewSectionCheck"/>
+                    <include name="playButtonCheck"/>
+                </methods>
+            </class>
+            <class name="tests.PopularPageTest">
+                <methods>
+                    <include name="moviesDisplayStatus"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

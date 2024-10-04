@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="utility.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="E:/Kiran/Next Wave/Projects/Mini_TestNG_Project(failed)">
+<suite thread-count="3" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="E:/Kiran/Next Wave/Projects/_FireFox_Mini_TestNG_Project(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.LoginPageTest">
+      <class name="tests.HomePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginPageElementsStatus"/>
+          <include name="searchForAMovie"/>
           <include name="setUp"/>
+          <include name="accountsPageLinkCheck"/>
+          <include name="popularPageLinkCheck"/>
+          <include name="tearDown"/>
+          <include name="homePageLinkCheck"/>
+          <include name="isHomePageElementsDisplayed"/>
         </methods>
-      </class> <!-- tests.LoginPageTest -->
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.AccountsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="isAccountPageElementsDisplayed"/>
+          <include name="logoutFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.AccountsPageTest -->
     </classes>
-  </test> <!-- E:/Kiran/Next Wave/Projects/Mini_TestNG_Project(failed) -->
+  </test> <!-- E:/Kiran/Next Wave/Projects/_FireFox_Mini_TestNG_Project(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

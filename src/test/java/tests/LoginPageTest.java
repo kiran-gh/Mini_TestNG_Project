@@ -10,12 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.LoginPage;
 import utility.ConfigReader;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
 import java.util.Properties;
 
 
-public class LoginPageTest {
+public class LoginPageTest  {
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -46,7 +47,9 @@ public class LoginPageTest {
         ConfigReader configReader = new ConfigReader();
         properties = configReader.init_prop();
         wait = new WebDriverWait(driver, Duration.ofSeconds(35));
+
         loginPage = new LoginPage(driver);
+
     }
 
     @DataProvider
@@ -86,6 +89,7 @@ public class LoginPageTest {
             driver.quit();
         }
     }
+
 }
 
 

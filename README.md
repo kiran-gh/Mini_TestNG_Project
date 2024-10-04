@@ -37,8 +37,8 @@ This project aims to automate various core features of the QA Movies App, includ
 <img src="Movies_TestNG_Detailed_Project_Structure.png"/>
 
 <h3>4.  Installation & Prerequisites</h3>
-* **JDK 1.8+ (Ensure that the Java class path is properly set)**
 
+* **JDK 1.8+ (Ensure that the Java class path is properly set)**
 * **Maven (Ensure that the .m2 class path is properly set)**
 * **IntelliJ IDEA**
 * **Browser`s (Make sure that you are having Chrome,Firefox & Edge browsers installed in your system)**
@@ -72,7 +72,7 @@ This project aims to automate various core features of the QA Movies App, includ
 <img src="Allure_TestNG_Report.png"/>
  
 <h3>8. Author Details:</h3>
-<p>**Name:** Vogeti Satya Kiran</p>
-<p>**E-Mail:** vogetisatyakiran@gmail.com</p>
-<p>**Phone:** 7382482271</p>
-<p>**LinkedIn:** <a href="https://www.linkedin.com/in/vogeti-satya-kiran/">You can click here to access my LinkedIn profile:  https://www.linkedin.com/in/vogeti-satya-kiran/ </a> </p>
+**Name:** <p> Vogeti Satya Kiran</p>
+**E-Mail:**<p> vogetisatyakiran@gmail.com</p>
+**Phone:**<p> 7382482271</p>
+**LinkedIn:**<p> <a href="https://www.linkedin.com/in/vogeti-satya-kiran/">You can click here to access my LinkedIn profile:  https://www.linkedin.com/in/vogeti-satya-kiran/ </a> </p>
